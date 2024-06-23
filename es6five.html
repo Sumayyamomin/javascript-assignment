@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Object literals</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const color = 'red'
+        const point = {
+        x: 5,
+        y: 10,
+        color,
+        toString() {
+            return 'X=' + this.x + ', Y=' + this.y + ', color=' + this.color
+        },
+        [ 'prop_' + 42 ]: 42
+        }
+
+        console.log('The point is ' + point)
+        console.log('The dynamic property is ' + point.prop_42)
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default function argument</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function sort(arr = [], direction = 'ascending') {
+    console.log('I\'m going to sort the array', arr, direction)
+    }
+
+    sort([1, 2, 3])
+    sort([3, 2, 1], 'descending')
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest and Spread Operator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Spread
+        var array = ['red', 'blue', 'green']
+        var copyOfArray = [...array]
+
+        console.log('Copy of', array, 'is', copyOfArray)
+        console.log('Are', array, 'and', copyOfArray, 'same?', array === copyOfArray)
+
+        //Rest
+        function printColors(first, second, third, ...others) {
+        console.log('Top three colors are ' + first + ', ' + second + ' and ' + third + '. Others are: ' + others)
+        }
+        printColors('yellow', 'blue', 'orange', 'white', 'black')
+    </script>
+</body>
+</html>

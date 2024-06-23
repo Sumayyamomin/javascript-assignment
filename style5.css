@@ -1,0 +1,32 @@
+.container {
+    width: 330px;
+    height: 330px;
+    background-color: rgb(7, 2, 2);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    cursor: move;
+  }
+
+  .image:hover{
+    background-color: chocolate;
+  }
+  
+  .order {
+    width: 330px;
+    height: 50px;
+    background-color: lightgrey;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: x-large;
+    font-family: Helvetica;
+  }

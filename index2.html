@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let numbers = [1, 2, 3, 4, 5];
+    let text = numbers.join();
+    console.log("Joined string: " +text);
+
+    let n = [1, 2, 3, 4, 5];
+    n.push(6, 7);
+    console.log("After Push:", n);
+    n.pop(7);
+    console.log("After Pop:", n);
+    n.shift();
+    console.log("After Shift:", n);
+    n.unshift(0);
+    console.log("After Unshift:", n);
+    
+    var a = n.slice(1, 4);
+    console.log("Sliced Array:", a);
+
+   let num = [4, 5, 6];
+   num.splice(0,0,0,8,9);
+   console.log("After Splice:", num);
+
+   let index = num.indexOf(5);
+   console.log("Index of 5:", index);
+
+   let i = num.includes(3);
+   console.log("3 exist in array:", i);
+
+   num.reverse();
+   console.log("After Reverse:", num);
+
+   num.sort();
+   console.log("After Sort:", num);
+
+   let line = "JavaScript is Awesome!";
+   let result = line.toUpperCase();
+   console.log("Uppercase:", result);
+
+   let res = line.toLowerCase();
+   console.log("Lowercase:", res);
+
+   let length = line.length;
+   console.log("Length:", length);
+
+   let ind = line.indexOf("is");
+   console.log("Index of 'is':", ind);
+
+   let sub = line.substring(4, 10);
+   console.log("Substring:", sub);
+
+   let replace = line.replace("Awesome!", "amazing!");
+   console.log("Replaced String:", replace);
+
+   let myArray = line.split(" ");
+   console.log("Split Array:", myArray);
+
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var array = [1, 2, 3, 4]
+
+        const sum = (acc, value) => {
+        const result = acc + value
+        console.log(acc, ' plus ', value, ' is ', result)
+        return result
+        }
+
+        var sumOfArrayElements = array.reduce(sum, 0)
+    </script>
+</body>
+</html>

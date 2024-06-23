@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-3</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    //Function declaration
+    function declaration() {
+         return declaration();  
+    }
+    console.log("Hello, Alice (Function declaration)"); 
+
+    //Function Expression
+    let Exp = function() {
+       return Exp();
+    }
+    console.log("Hello, Bob (Function expression)");
+
+    //Arrow function
+    let hello = "";
+    hello = () => {
+    return "Hello, Charlie (Arrow function)";
+    }
+    console.log(hello());
+
+    //Function constructor
+    function Person(greet, name) {
+        this.greet = greet;
+        this.name = name;
+
+        this.getFullName = function () {
+            return this.greet + " " + this.name;
+        };
+    }
+    let person = new Person("Hello,", "Dave (Function constructor)");
+    console.log(person.getFullName());
+
+    //IIFE
+    const greeting = "Hello, Eve (IIFE)";
+
+    (function myGreeting() {
+        console.log(greeting);
+    })();
+
+    //Generator Function
+    function* generatorFn() {
+        console.log("Hello, World (Generator function)");
+    }
+    const gen = generatorFn();
+    console.log(gen.next());
+
+    //Returned Function
+    let x = myFunction("Hey,", " Frank (Returned function)");
+    console.log(x);
+    function myFunction(a, b) {
+    return a + b;
+    }
+
+    //object method
+    const variable = {
+        Wish: "Hello",
+        Name: "Grace",
+        };
+    variable.name = function() {
+         return (this.Wish + " " + this.Name);
+    };
+
+    console.log(variable.name() + " (Object method)");
+</script>
+</html>
